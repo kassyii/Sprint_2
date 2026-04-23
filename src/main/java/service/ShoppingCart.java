@@ -42,7 +42,7 @@ public class ShoppingCart {
 
 
     //получить общую сумму всех вегетарианских продуктов в корзине без скидки.
-    public double totalVeganSumWithDiscount(){
+    public double totalVeganSumWithoutDiscount(){
         double total = 0.0;
         for (Food food: foods){
             if (food.isVegetarian()) {

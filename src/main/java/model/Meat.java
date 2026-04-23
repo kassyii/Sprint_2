@@ -1,5 +1,7 @@
 package model;
 
+import static model.constants.Discount.NO_DISCOUNT;
+
 public class Meat extends Food {
 
     /*
@@ -17,6 +19,7 @@ public class Meat extends Food {
     //Переопределили метод интерфейса. Должен возвращать 0
     @Override
     public double getDiscount() {
-        return 0;
+
+        return NO_DISCOUNT;
     }
 }

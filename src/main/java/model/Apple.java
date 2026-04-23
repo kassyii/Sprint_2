@@ -10,7 +10,7 @@ public class Apple extends Food {
     Конструктор принимает три параметра: количество, цену и цвет яблок — и устанавливает флаг isVegetarian.
      */
 
-    String color;
+    private String color;
 
     //@Override Переопределили конструктор абстрактного класса
     public Apple(int amount, double price, String color){
@@ -25,10 +25,10 @@ public class Apple extends Food {
 
     @Override
     public double getDiscount() {
-        if (color.equals(red)) {
-            return discount;
+        if (color.equals(RED)) {
+            return DISCOUNT;
         } else{
-            return 0;
+            return NO_DISCOUNT;
         }
 
     }

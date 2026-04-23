@@ -1,5 +1,7 @@
 package model;
 
+import static model.constants.Discount.NO_DISCOUNT;
+
 public abstract class Food implements Discountable {
 
     protected int amount;
@@ -27,6 +29,6 @@ public abstract class Food implements Discountable {
     }
 
     public double getDiscount() {
-        return 0.0;
+        return NO_DISCOUNT;
     }
 }
